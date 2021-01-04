@@ -64,7 +64,8 @@ var canFinish = function (numCourses, prerequisites) {
     graph[i] = [];
   }
   for (let i = 0; i < prerequisites.length; i++) {
-    const c1 = prerequisites[i][0],
+    const
+      c1 = prerequisites[i][0],
       c2 = prerequisites[i][1];
     if (!c1 in graph || !c2 in graph) {
       return false;
